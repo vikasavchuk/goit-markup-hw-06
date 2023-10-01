@@ -48,6 +48,8 @@ img {
 .menu {
     display: flex;
     align-items: center;
+    margin-right: auto;
+    /* margin-right: auto; добавлено для кнопки */
 }
 
 .logo {
@@ -108,16 +110,30 @@ img {
     border-radius: 2px;
     content: '';
     width: 100%;
-  }
+}
+
+.button-menu {
+  min-height: 28px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 .adress {
     font-style: normal;
 }
 
-.address-group {
+/* .address-group {
     display: flex;
     gap: 40px;
-}
+} */
 
 .contacts {
     color: #434455;
@@ -151,14 +167,21 @@ color: #404BBF;
 }
 
 .container {
-    width: 1158px;
+    /* width: 1158px; для дисктопної версії */
+    width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.container-three {
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .h-effective {
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     font-weight: 700;
     color: #FFF ; 
     line-height: 1.07;
@@ -193,7 +216,8 @@ color: #404BBF;
 }
 
 .section-two {
-    padding: 120px 0;
+    /* padding: 120px 0; тільки комп версія */
+    padding: 96px 0;
 }
 
 .visually-hidden {
@@ -211,16 +235,19 @@ color: #404BBF;
 
 .feature-group {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
 }
 
 .feature-li {
     flex-direction: column;
     align-items: flex-start;
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    flex-basis: 100%;
 }
 
-.rectangle {
+/* .rectangle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,16 +257,31 @@ color: #404BBF;
     width: 264px;
     height: 112px;
     margin-bottom: 8px;
+} */
+
+.rectangle {
+  position: static;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
 }
 
 .title {
     color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
+    /* font-size: 20px; */
+    font-size: 36px;
+    /* font-weight: 500; */
+    font-weight: 700;
     line-height: 1.5; 
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     font-style: normal;
+    text-align: center;
+    /* text-align: center; на мобільній версії текст по центру */
 }
 
 .text {
@@ -251,7 +293,8 @@ color: #404BBF;
 
 .section-three {
     background: #F4F4FD;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .h-our {
@@ -263,12 +306,13 @@ color: #404BBF;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
-    margin-bottom: 72px;
 }
 
 .team-card {
-    display: flex;
-    gap: 24px;
+    display: flex; 
+    flex-wrap: wrap;
+    /* gap: 24px; для дисктопної версії*/
+    gap: 72px;
 }
 
 .team-li {
@@ -281,6 +325,8 @@ color: #404BBF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08); 
+    flex-basis: 100%;
+    /* flex-besis добавила щоб вирівняти по центру, зробилися полоски по сторонам фотографій */
 }
 
 .team-div {
@@ -341,18 +387,20 @@ color: #404BBF;
 
 .section-four {
     background-color: #ffffff;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .project-card {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    /* gap: 24px; */
     row-gap: 48px;
 }
 
 .project-li {
-    flex-basis: calc((100% - 48px) / 3);
+    /* flex-basis: calc((100% - 48px) / 3); */
+    flex-basis: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -394,17 +442,34 @@ color: #404BBF;
     border-top: none;
 }
 
+.project-title {
+  color: #2E2F42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5; 
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  font-style: normal;
+}
+
 /* footer */
 
 .footer {
     background: #2E2F42;
     padding: 100px 0;
+    /* padding: 97.5px 0; */
 }
 
 .conteiner-footer {
     display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap; потрібно */
     align-items: baseline;
-  }
+}
+
+/* .footer-div {
+  flex-basis: 100%;
+} */
 
 .footer-div {
     margin-right: 120px;
@@ -422,6 +487,8 @@ color: #404BBF;
     display: inline-block;
     align-items: center;
     margin-bottom: 16px; 
+    /* margin-left: 86px; */
+    /* margin-left: 86px; добавила */
 }
 
 .logo-footer {
@@ -436,6 +503,12 @@ color: #404BBF;
     max-width: 264px;
 }
 
+/* .div-media {
+  flex-basis: 100%;
+  padding: 72px 40px;
+  /* повністю новий div 
+} */
+
 .media {
     font-size: 16px;
     line-height: 1.5;
@@ -443,6 +516,8 @@ color: #404BBF;
     color: #fff;
     font-weight: 500;
     margin-bottom: 16px;
+    /* text-align: center; */
+    /* text-align: center; добавила */
 }
 
 .media-list {
@@ -477,9 +552,10 @@ color: #404BBF;
 
 .footer-input {
     margin-left: 80px;
-  }
+    /* flex-basis: 100%; */
+}
 
-  .modal-title-footer {
+.modal-title-footer {
     color: #fff;
     font-size: 16px;
     font-style: normal;
@@ -487,21 +563,25 @@ color: #404BBF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-  }
+    /* text-align: center; */
+    /* text-align: center; добавила */
+}
 
-  .subscribe-form {
+.subscribe-form {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-  }
+}
 
-  .email-form {
+.email-form {
     display: flex;
-  }
+}
 
-  .email-input {
+.email-input {
     border-radius: 4px;
     border: 1px solid #fff;
     width: 264px;
+    /* width: 288px; */
     height: 40px;
     background-color: transparent;
     padding: 8px 0 8px 16px;
@@ -512,14 +592,15 @@ color: #404BBF;
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #fff;
-  }
+}
 
-  .button-subscribe {
+.button-subscribe {
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 165px;
     margin-left: 24px;
+    /* margin-left: 61px; */
     padding: 8px 24px;
     text-align: center;
     color: #fff;
@@ -530,12 +611,12 @@ color: #404BBF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-  }
+}
 
-  .social-icon-input {
+.social-icon-input {
     fill: #ffffff;
     margin-left: 16px;
-  }
+}
 
 /* modal */
 
@@ -543,7 +624,7 @@ color: #404BBF;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 31.5%;
     height: 100%;
     background:  rgba(46, 47, 66, 0.40);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
@@ -551,10 +632,13 @@ color: #404BBF;
   }
   
   .modal {
-    max-width: 408px;
-    min-height: 584px;
+    /* max-width: 408px; */
+    max-width: 288px;
+    /* min-height: 584px; */
+    min-height: 623px;
     background-color: #fff;
-    padding: 72px 24px 24px;
+    /* padding: 72px 24px 24px; */
+    padding: 72px 16px 16px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -634,7 +718,8 @@ color: #404BBF;
   }
   
   .modal-input {
-    width: 360px;
+    /* width: 360px; */
+    width: 256px;
     height: 40px;
     border-radius: 4px;
     background-color: transparent;
@@ -661,7 +746,8 @@ color: #404BBF;
   }
   
   .modal-textarea {
-    width: 360px;
+    /* width: 360px; */
+    width: 256px;
     height: 120px;
     resize: none;
     border-radius: 4px;
@@ -764,3 +850,20 @@ color: #404BBF;
   .modal-button-send:focus {
     background-color: #404bbf;
   }
+
+  .backdrop.is-hidden .modal, .backdrop {
+    transform: scale(0);
+  }
+
+/* modal menu */
+
+.menu-container {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
