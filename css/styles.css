@@ -154,16 +154,65 @@ color: #404BBF;
 
 .section-one {
     background: #2E2F42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
+    padding: 72px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), 
-    url(../images/people-office.jpg);
-    max-width: 1440px;
+    url(../images/background-image/Dark-bg.mob.jpg);
+    /* max-width: 1440px; */
+    max-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+    url(../images/background-image/Dark-bg.mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-one {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+    url(../images/background-image/Dark-bg.mob.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+    url(../images/background-image/Dark-bg.tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-one {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+    url(../images/background-image/people-office\ 1.desk.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+    url(../images/background-image/people-office\ 1.desk@2x.jpg);
+  }
 }
 
 .container {
@@ -187,7 +236,8 @@ color: #404BBF;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    /* max-width: 496px; */
+    max-width: 200px;
     margin: 0 auto;
 }
 
@@ -202,7 +252,8 @@ color: #404BBF;
     letter-spacing: 0.04em;
     display: block;
     padding: 16px 32px;
-    margin: 48px auto 0;
+    /* margin: 48px auto 0; */
+    margin: 72px auto 0;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -456,24 +507,24 @@ color: #404BBF;
 
 .footer {
     background: #2E2F42;
-    padding: 100px 0;
-    /* padding: 97.5px 0; */
+    /* padding: 100px 0; */
+    padding: 97.5px 0;
 }
 
 .conteiner-footer {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* flex-wrap: wrap; потрібно */
     align-items: baseline;
 }
 
-/* .footer-div {
-  flex-basis: 100%;
-} */
-
 .footer-div {
-    margin-right: 120px;
+  flex-basis: 100%;
 }
+
+/* .footer-div {
+    margin-right: 120px;
+} */
 
 .logo-two {
     color: #4D5AE5;
@@ -487,7 +538,7 @@ color: #404BBF;
     display: inline-block;
     align-items: center;
     margin-bottom: 16px; 
-    /* margin-left: 86px; */
+    margin-left: 86px;
     /* margin-left: 86px; добавила */
 }
 
@@ -503,11 +554,11 @@ color: #404BBF;
     max-width: 264px;
 }
 
-/* .div-media {
+.div-media {
   flex-basis: 100%;
   padding: 72px 40px;
-  /* повністю новий div 
-} */
+  /* повністю новий div */
+}
 
 .media {
     font-size: 16px;
@@ -516,7 +567,7 @@ color: #404BBF;
     color: #fff;
     font-weight: 500;
     margin-bottom: 16px;
-    /* text-align: center; */
+    text-align: center;
     /* text-align: center; добавила */
 }
 
@@ -551,8 +602,8 @@ color: #404BBF;
 }
 
 .footer-input {
-    margin-left: 80px;
-    /* flex-basis: 100%; */
+    /* margin-left: 80px; */
+    flex-basis: 100%;
 }
 
 .modal-title-footer {
@@ -563,7 +614,7 @@ color: #404BBF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    /* text-align: center; */
+    text-align: center;
     /* text-align: center; добавила */
 }
 
@@ -580,8 +631,8 @@ color: #404BBF;
 .email-input {
     border-radius: 4px;
     border: 1px solid #fff;
-    width: 264px;
-    /* width: 288px; */
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     background-color: transparent;
     padding: 8px 0 8px 16px;
@@ -599,8 +650,8 @@ color: #404BBF;
     justify-content: center;
     align-items: center;
     min-width: 165px;
-    margin-left: 24px;
-    /* margin-left: 61px; */
+    /* margin-left: 24px; */
+    margin-left: 61px;
     padding: 8px 24px;
     text-align: center;
     color: #fff;

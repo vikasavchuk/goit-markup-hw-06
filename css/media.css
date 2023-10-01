@@ -4,6 +4,11 @@
     .container {
         max-width: 320px;
     }
+
+    .img-project {
+        width: 288px;
+        height: 280px;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -33,13 +38,22 @@
     }
 
     /* main */
+    .section-one {
+        padding: 112px 0;
+    }
+
     .container {
         max-width: 768px;
     }
     
     .h-effective {
          font-size: 56px;
+         max-width: 496px;
     } 
+
+    .service-button {
+        margin: 36px auto 0;
+    }
 
     .feature-group {
         gap: 24px;
@@ -77,8 +91,13 @@
         width: calc((100% - 24px) / 2);
     }
 
+    .img-project {
+        width: 356px;
+        height: 300px;
+    }
+
     /* footer */
-    /* .footer {
+    .footer {
         padding: 96px 0;
     }
 
@@ -86,7 +105,32 @@
         padding-left: 108px;
         gap: 24px;
         row-gap: 72px;
-    } */
+    }
+    
+    .footer-div {
+        flex-basis: 45%;
+    }
+
+    .logo-two {
+        margin-left: 0;
+    }
+
+    .div-media {
+        flex-basis: 40%;
+        padding: 0;
+    }
+
+    .media {
+        text-align: left;
+    }
+
+    .modal-title-footer {
+        text-align: left;
+    }
+
+    .button-subscribe {
+        margin-left: 0;
+    }
 
     /* modal */
     .backdrop {
@@ -119,8 +163,16 @@
     }
 
     /* main */
+    .section-one {
+        padding: 188px 0;
+    }
+
     .container {
         min-width: 1158px;
+    }
+
+    .service-button {
+        margin: 48px auto 0;
     }
 
     .section-two {
@@ -182,14 +234,31 @@
         width: calc((100% - 48px) / 3);
     }
 
+    .img-project {
+        width: 360px;
+    }
+
     /* footer */
-    /* .footer {
+    .footer {
         padding: 100px 0;
     }
 
+    .conteiner-footer {
+        flex-wrap: nowrap;
+        padding-left: 16px;
+        gap: 0;
+        row-gap: 0;
+    }
+
     .footer-div {
+        flex-basis: 50%;
         margin-right: 120px;
-    } */
+    }
+
+    .div-media {
+        flex-basis: 20%;
+        margin-right: 80px;
+    }
 
     /* modal */
     .backdrop {
